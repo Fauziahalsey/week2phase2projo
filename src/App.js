@@ -11,6 +11,7 @@ const App = () => {
   useEffect(() => {
     fetchBots();
   }, []);
+  
 
   const fetchBots = () => {
     fetch('http://localhost:3000/bots')
