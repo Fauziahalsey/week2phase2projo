@@ -1,17 +1,14 @@
 import React, { useState, useEffect } from 'react';
-// import BCollection from './BCollection';
-// import BArmy from './BArmy';
 import BArmy from './Components/BArmy';
 import BCollection from './Components/BCollection';
 
 const App = () => {
-  const [bots, setBots] = useState([]); 
-  const [army, setArmy] = useState([]); 
+  const [bots, setBots] = useState([]);
+  const [army, setArmy] = useState([]);
 
   useEffect(() => {
     fetchBots();
   }, []);
-  
 
   const fetchBots = () => {
     fetch('http://localhost:3000/bots')
@@ -21,7 +18,7 @@ const App = () => {
   };
 
   const addToArmy = (botToAdd) => {
-    // bots already enlisted in the army
+    // Check if the bot is already enlisted in the army
     if (!army.some((bot) => bot.id === botToAdd.id)) {
       setArmy([...army, botToAdd]);
     }
@@ -33,7 +30,7 @@ const App = () => {
   };
 
   const dischargeFromService = (botId) => {
-    fetch(`http://localhost:3000/bots${botId}`, { method: 'DELETE' })
+    fetch(`http://localhost:3000/bots/${botId}`, { method: 'DELETE' })
       .then((response) => response.json())
       .then((data) => {
         const updatedArmy = army.filter((bot) => bot.id !== botId);

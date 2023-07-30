@@ -1,13 +1,50 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+
+h2 {
+  margin-left: 34rem;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.bot-collection {
+  display: flex;
+  flex-wrap: nowrap; 
+  justify-content: space-around;
+  margin: 20px;
+  
+}
+
+.bot-card {
+  background-color: #fff;
+  height: 25rem;
+  width: 34rem;
+  padding: 2rem;
+  margin-bottom: 3rem;
+  padding-top: 10rem;
+  border: 2px solid hsl(0, 3%, 8%);
+  border-radius: 25px;
+  box-shadow: 10px 10px 5px #ccc;
+}
+
+
+.bot-card img {
+  max-width: 100%;
+  height: 10rem;
+  margin-bottom: 10px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px #ccc;
+  justify-content: center;
+  display: flex;
+}
+
+.bot-card button {
+  background-color: #fcf814;
+  color: #050000;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.bot-card button:hover {
+  background-color: #30f016;
 }
