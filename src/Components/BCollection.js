@@ -5,7 +5,7 @@ function Bcollection ({bots, onList}) {
         <div>
             <h2>Bot Collection</h2>
             {bots.map((bot) => (
-                <div key={bot.id}>
+                <div className="bot-army" key={bot.id}>
                     <h3>Name:{bot.name}</h3>
                     <h3>Health{ bot.health }</h3>
                     <h3>Damage{ bot.damage}</h3>

@@ -9,6 +9,21 @@ div {
   
 }
 
+.bot-army {
+
+  padding: 10px; 
+  display: flex;
+  flex-wrap: wrap;
+  width: 1500px;
+}
+
+.bot-army #bot {
+  width: 300px; 
+  margin: 10px;
+  padding: 100px; 
+  border: 2px solid #ddd; 
+  
+}
 
 #main {
   width: 100%;
@@ -20,7 +35,7 @@ div {
   display: flex;
   flex-direction: column;
   margin: 20px;
-  border: 1px soid black;
+ 
 
 }
 
@@ -30,6 +45,8 @@ div {
   border-radius: 10px;
   background: linear-gradient(to left, rgb(182, 230, 8), rgb(102, 232, 241));
   box-shadow: 2px 2px 10px black;
+  /* margin-left: -6rem; */
+  
 }
 
 

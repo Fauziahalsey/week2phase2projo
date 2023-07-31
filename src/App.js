@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import "./App.css"
+import BSpecs from "./Components/BSpec";
 
 const Url = "http://localhost:3000/bots";
 
@@ -48,7 +49,7 @@ function App() {
     <h1>Bot Army</h1>
     <h2>Bot Collection</h2>
   </div>
-  <div>
+  <div className="bot-army">
     {bots.map((bot) => (
       <div key={bot.id} id="bot">
         <h3>{bot.name}</h3>
@@ -72,8 +73,8 @@ function App() {
         <h3>{bot.name}</h3>
 
         <img src={bot.avatar_url} alt={bot.name} />
-        <button onClick={() => handleRemove(bot)}>Remove</button>
-        <button onClick={() => handleDelete(bot)}>X</button>
+        <button onClick={() => handleRemove(bot)}>Go back</button>
+        <button onClick={() => handleDelete(bot)}>enlist</button>
       </div>
     ))}
   </div>
