@@ -1,9 +1,8 @@
-import React from 'react';
+import React from "react";
 
 const BSpecs = ({ bot, goBackToList, enlistBot }) => {
   const handleEnlistBot = () => {
     enlistBot(bot);
-    
   };
 
   return (
@@ -16,7 +15,6 @@ const BSpecs = ({ bot, goBackToList, enlistBot }) => {
       <p>Class: {bot.bot_class}</p>
       <p>Catchphrase: {bot.catchphrase}</p>
       <img src={bot.avatar_url} alt={bot.name} />
-
       <button onClick={goBackToList}>Go Back</button>
       <button onClick={handleEnlistBot}>Enlist Bot</button>
     </div>
