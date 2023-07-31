@@ -52,6 +52,12 @@ function App() {
     {bots.map((bot) => (
       <div key={bot.id} id="bot">
         <h3>{bot.name}</h3>
+        <p>{bot.name}</p>
+          <p>Health: {bot.health}</p>
+          <p>Damage: {bot.damage}</p>
+          <p>Armor: {bot.armor}</p>
+          <p>Class: {bot.bot_class}</p>
+          <p>Catchphrase: {bot.catchphrase}</p>
         <img src={bot.avatar_url}/>
         <button onClick={() => handleList(bot)}>Add Bot</button>
       </div>
@@ -64,6 +70,7 @@ function App() {
     {army.map((bot) => (
       <div key={bot.id} id="bot">
         <h3>{bot.name}</h3>
+
         <img src={bot.avatar_url} alt={bot.name} />
         <button onClick={() => handleRemove(bot)}>Remove</button>
         <button onClick={() => handleDelete(bot)}>X</button>

@@ -1,53 +1,59 @@
+
 body {
-  background-color: rgb(231, 134, 8); 
- }
- 
- div{
-   display: flex;
-   flex-direction: row;
-   flex-wrap: wrap;
- }
- 
- #main{
-   width: 100%;
-   display: flex;
-   flex-direction: column;
- }
- 
- #bot{
-   display: flex;
-   flex-direction: column;
-   margin: 20px;
- }
- 
- #bot button{
-   margin-top: 10px;
-   padding: 20px;
-   border-radius: 10px;
-   background: linear-gradient(to left,rgb(41, 143, 202),rgb(102, 232, 241));
-   box-shadow: 2px 2px 10px black;
- }
- 
- #mybots{
-   position: fixed;
-   right: 0px;
-   top: 0px;
-   display: flex;
-   flex-direction: column;
-   border-left: 2px solid white;
-   width: 25%;
-   overflow-y: scroll;
- 
- }
- 
- #mybots h2{
-   text-align: center;
-   font-size: 30px;
-   color: cyan;
-   text-shadow: 0 0 10px red;
-   text-shadow: 0 -5px 10px orange;
- }
- 
- #sect1{
-   width: 75%;
- }
+  background-color: rgb(231, 134, 8);
+}
+div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  
+}
+
+
+#main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#bot {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  border: 1px soid black;
+
+}
+
+#bot button {
+  margin-top: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  background: linear-gradient(to left, rgb(182, 230, 8), rgb(102, 232, 241));
+  box-shadow: 2px 2px 10px black;
+}
+
+
+#mybots {
+  position: fixed;
+  right: 0px;
+  top: 0px;
+  display: flex;
+  flex-direction: column;
+  border-left: 2px solid white;
+  width: 25%;
+  overflow-y: scroll;
+  border: 2px solid black;
+}
+
+
+#mybots h2 {
+  text-align: center;
+  font-size: 30px;
+  color: cyan;
+  text-shadow: 0 0 10px red, 0 -5px 10px orange;
+}
+
+
+#sect1 {
+  width: 75%;
+}
