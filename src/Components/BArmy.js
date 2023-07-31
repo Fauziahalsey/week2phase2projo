@@ -24,4 +24,3 @@ const BArmy = ({ army, releaseFromArmy, dischargeFromService }) => {
 
 export default BArmy;
 	
-
