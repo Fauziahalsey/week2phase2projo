@@ -1,51 +1,53 @@
-
-
-h2 {
-  margin-left: 34rem;
-}
-
-
-.bot-collection {
-  display: flex;
-  flex-wrap: nowrap; 
-  justify-content: space-around;
-  margin: 20px;
-  
-}
-
-.bot-card {
-  background-color: #fff;
-  height: 25rem;
-  width: 34rem;
-  padding: 2rem;
-  margin-bottom: 3rem;
-  padding-top: 10rem;
-  border: 2px solid hsl(0, 3%, 8%);
-  border-radius: 25px;
-  box-shadow: 10px 10px 5px #ccc;
-}
-
-
-.bot-card img {
-  max-width: 100%;
-  height: 10rem;
-  margin-bottom: 10px;
-  border: 2px solid #ccc;
-  border-radius: 10px;
-  box-shadow: 5px 5px 5px #ccc;
-  justify-content: center;
-  display: flex;
-}
-
-.bot-card button {
-  background-color: #fcf814;
-  color: #050000;
-  border: none;
-  padding: 8px 12px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.bot-card button:hover {
-  background-color: #30f016;
-}
+body {
+  background-color: rgb(231, 134, 8); 
+ }
+ 
+ div{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+ }
+ 
+ #main{
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+ }
+ 
+ #bot{
+   display: flex;
+   flex-direction: column;
+   margin: 20px;
+ }
+ 
+ #bot button{
+   margin-top: 10px;
+   padding: 20px;
+   border-radius: 10px;
+   background: linear-gradient(to left,rgb(41, 143, 202),rgb(102, 232, 241));
+   box-shadow: 2px 2px 10px black;
+ }
+ 
+ #mybots{
+   position: fixed;
+   right: 0px;
+   top: 0px;
+   display: flex;
+   flex-direction: column;
+   border-left: 2px solid white;
+   width: 25%;
+   overflow-y: scroll;
+ 
+ }
+ 
+ #mybots h2{
+   text-align: center;
+   font-size: 30px;
+   color: cyan;
+   text-shadow: 0 0 10px red;
+   text-shadow: 0 -5px 10px orange;
+ }
+ 
+ #sect1{
+   width: 75%;
+ }
